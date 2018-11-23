@@ -2,7 +2,7 @@ import boto3
 sts = boto3.client('sts',endpoint_url="https://sts.cn-northwest-1.amazonaws.com.cn")
 
 assumed_role_object = sts.assume_role(
-    RoleArn="arn:aws-cn:iam::313497334385:role/s3fullaccess_self_account",
+    RoleArn="arn:aws-cn:iam::<your account>:role/s3fullaccess_self_account",
     RoleSessionName="AssumeRoleSession000001"
 )
 
