@@ -2,3 +2,6 @@
 该Demo演示向AWS STS获取临时credentials，然后使用临时credentials访问S3
 
 向STS发起的请求是assume role API，使用SDK获取本机配置的credential
+该API需要的必选参数是RoleArn和RoleSessionName
+RoleArn是指定要获得的临时credentials所拥有的权限
+RoleSessionName是随机定义的用户session标识
